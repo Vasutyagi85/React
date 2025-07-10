@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>React</title>
+</head>
+<body>
+    <h1>
+        top of the root
+    </h1>
+    <div id="root"></div>
+    <h1>
+        below of the root
+    </h1>
+
+    <!-- HELLO WORLD PROGRAM USING html -->
+    <!-- <script>
+        // const heading=document.createElement("h1");//creating an element h1
+        // heading.innerHTML="Hello world from javascript";//making changes inside it
+
+        // const root=document.getElementById("root");//extracting root named id 
+        // root.appendChild(heading);//appending heading named variable containing h1 named element into the root named id which is a container
+    </script> -->
+
+
+    <!-- HELLO WORLD USING REACT -->    
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+     <!-- <script>
+        const heading=React.createElement("h1",{},"Hello world from React!")
+        // first argument is what element we have to create 
+        // second argument is Object
+        // third argument is what we have to write in that element
+
+        const root=ReactDOM.createRoot(document.getElementById("root"));
+        // we have created a root where dom manipulation and all works here and everything we will render inside this which is div we created named as root above
+
+        root.render(heading)
+        //render heading inside root
+     </script> -->
+
+     <script src="App.js"></script>
+</body>
+</html>
