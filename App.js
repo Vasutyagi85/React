@@ -6,19 +6,19 @@
 </div> */
 //CREATING ABOVE USING REACT
 
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 
-const parent =React.createElement("div",{id:"parent"},[React.createElement(
-    "div",
-    {id:"child1"},
-    [React.createElement("h1",{},"Im an h1 tag"),
-    React.createElement("h1",{},"Im an h1 tag")]
-),
-React.createElement(
-    "div",
-    {id:"child2"},
-    [React.createElement("h1",{},"Im an h1 tag"),
-    React.createElement("h1",{},"Im an h1 tag")])
+const parent = React.createElement("div", { id: "parent" }, [
+  React.createElement("div", { id: "child1", key: "child-1" }, [
+    React.createElement("h1", { key: "child-1-h1" }, "I'm an h1 tag"),
+    React.createElement("h2", { key: "child-1-h2" }, "I'm an h2 tag")
+  ]),
+  React.createElement("div", { id: "child2", key: "child-2" }, [
+    React.createElement("h1", { key: "child-2-h1" }, "I'm another h1 tag"),
+    React.createElement("h2", { key: "child-2-h2" }, "I'm another h2 tag")
+  ])
 ]);
 //reacteleement is a object
 
@@ -30,6 +30,5 @@ React.createElement(
 const root=ReactDOM.createRoot(document.getElementById("root"));
 // we have created a root where dom manipulation and all works here and everything we will render inside this which is div we created named as root above
 
-console.log(parent);
 
 root.render(parent);
