@@ -119,3 +119,66 @@ node_modules/	       Stores all dependencies and transitive ones
 -Tree Shaking- remove unused code
 -Diffrent dev and prod bundles
 
+#Food ordering app structure
+*  -Logo
+*  -Nav links
+* Body 
+*  -Search
+*  -RestaurantContainer
+*    -RestaurantCard
+       -Img
+       -Name of res, star rating, cuisine,delievery time
+* Footer
+*  -Copyright
+*  -Links 
+*  -Address
+*  -Contact*/
+
+
+Two types of Export/Import
+
+-Default Export/Import
+export default Component;
+import Component from"path";
+
+-Named Export/Import
+
+export const Component 
+import {Component} from "path";
+
+
+#React Hooks
+(Normal JS utility function)
+-useState()
+-useEffect()
+
+🔄 State
+State is like a component’s internal memory. It stores data that can change over time, usually due to user interaction or API responses.
+
+Mutable: You can update it using useState or setState.
+
+Triggers re-render: When state changes, the component updates.
+
+Local to the component.
+
+🧩 Props (Short for “Properties”)
+Props are like arguments passed to a function. They allow you to send data from a parent component to a child component.
+
+Immutable: Once passed, the child component can’t change them.
+
+Used for customization: You can reuse components with different data.
+
+Passed via JSX attributes.
+
+🔄 What Is Reconciliation?
+Reconciliation is the process React uses to update the DOM when your app’s data changes. Instead of re-rendering everything, React:
+
+Creates a new Virtual DOM tree.
+
+Compares it with the previous one using the diffing algorithm.
+
+Calculates the minimal set of changes.
+
+Applies those changes to the real DOM.
+
+This keeps your app fast, even with complex UIs.
